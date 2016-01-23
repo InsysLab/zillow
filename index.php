@@ -33,7 +33,7 @@ include("search.php");
 							<div class="result-detail">
 								<p>Address: <?php echo $result["address"] ?></p>
 								<p>Estimated Price: <?php echo "$". number_format( floatval($result["estimate"]), 2 ) ?></p><br/><br/>
-								<p><a class="btn" href="<?php echo $result["details"] ?>">Continue to Zillow for detailed infomation</a></p>
+								<p><a class="btn" href="<?php echo $result["details"] ?>" target="blank">Continue to Zillow for detailed infomation</a></p>
 							</div>
 						</div>
 					<?php endif; ?>			

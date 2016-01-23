@@ -50,7 +50,11 @@ class Zillow_API_Search{
 		@$dom->loadHTML($html);
 
 		$domxpath = new DOMXPath($dom);
-		$nodes = $domxpath->query("//img [@class=\"hip-photo\"]");	
-		return $nodes->item(0)->getAttribute("src");
+		$nodes = $domxpath->query("//img [@class=\"hip-photo\"]");
+		if( $nodes->length > 0 ){
+			return $nodes->item(0)->getAttribute("src");
+		} else {
+			return false;
+		}
 	}
 }
