@@ -1,0 +1,43 @@
+body{
+	font-family: arial,sans-serif;
+	font-size: small;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+input{
+	padding: 5px;
+}
+#main-container{
+	width: 74%;
+	margin: 0 auto;
+}
+.container{
+	display: block;
+}
+.search-form{
+	background: #e2effc;
+	padding: 20px;
+}
+.search-form .medium{
+	width: 300px;
+}
+.search-result{
+	margin-top: 20px;
+	padding: 20px;
+}
+.search-result .result img{
+	float: left;
+	width: 300px;
+}
+.search-result .result .result-detail{
+	float: left;
+	margin-left: 20px;
+}
+.btn{
+	background: #0074e4;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}
