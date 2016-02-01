@@ -3,7 +3,7 @@
 class Zillow_API_Search{
 	
 	private $api_url = "http://www.zillow.com/webservice/GetSearchResults.htm";
-	private $api_key = "X1-ZWz1dyb53fdhjf_6jziz";
+	private $api_key = "your-api-key";
 	
 	public function execute_search($address, $city, $state, $zip, $rent_estimate = false){
 		if( empty($address) || empty($city) || empty($state) ) return false;
